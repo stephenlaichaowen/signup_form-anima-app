@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./img/favicon.png" rel="shortcut icon" />
+  <meta charset="utf-8" />
+  <meta content="width=1024, maximum-scale=1.0" name="viewport" />
+  <link href="./css/confirmation.css" rel="stylesheet" type="text/css" />
+  <meta content="AnimaApp.com - Design to code, Automated." name="author">
+  </meta>
+</head>
+
+<body style="margin: 0; background: rgba(255, 255, 255, 1.0);">
+  <input id="anPageName" name="page" type="hidden" value="confirmation" />
+  <div class="anima-container-center-horizontal">
+    <div class="confirmation anima-screen ">
+      <div class="mask-3451a2ab-d6c9-4877-ab29-992687c92141-cSBEPl anima-flexbox-container">
+        <img anima-src="./img/mask@1x.png" class="mask-de8fa847-cf94-4570-8135-67a075e3f42a-UbytCJ"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+      </div>
+      <div class="overlay-5f893aee-36e5-4b69-a143-23d7033ca200-gRSPgC">
+        <div class="background-3817960d-ce21-4de7-a434-af18540decb8-FINaHZ">
+        </div>
+        <div class="ok-button-19f1e9a4-a1d4-4f9f-a65f-75e3ec545b41-yBsUCv">
+          <div class="rectangle-9c95554f-72e1-4292-8d78-a2ed2a262078-Flalt6">
+          </div>
+          <div class="ok-2cae0dee-5a28-43d5-bd4e-7b47aeb6f597-xVYHgE">
+            OK
+          </div>
+        </div>
+        <div class="please-check-your-em-03be7544-8063-461a-952c-d8833dd866f6-mfrHKv font-class-1">
+          Please check your email for activation.
+        </div>
+        <div class="signed-up-successfully-f1e082fe-5091-435b-ad2f-bfff45707d36-MDMtT0">
+          You have signed up successfully
+        </div>
+        <div class="checkmark-86c2710d-f588-420a-b7ba-3feccc463eda-QzClM6 anima-flexbox-container">
+          <div class="entypo-checkmark-0e184518-a592-4bda-a8a6-7f2d6ef32420-hgxE8e anima-flexbox-container">
+            <img anima-src="./img/shape-10@1x.png" class="shape-084f65d9-5027-4689-9afb-49aaf4337106-iD6eNe"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    anima_isHidden = function (e) {
+      if (!(e instanceof HTMLElement)) return !1;
+      if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+      return !1;
+    };
+    anima_loadAsyncSrcForTag = function (tag) {
+      var elements = document.getElementsByTagName(tag);
+      var toLoad = [];
+      for (var i = 0; i < elements.length; i++) {
+        var e = elements[i];
+        var src = e.getAttribute("src");
+        var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+        if (loaded) continue;
+        var asyncSrc = e.getAttribute("anima-src");
+        if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+        if (anima_isHidden(e)) continue;
+        toLoad.push(e);
+      }
+      toLoad.sort(function (a, b) {
+        return anima_getTop(a) - anima_getTop(b);
+      });
+      for (var i = 0; i < toLoad.length; i++) {
+        var e = toLoad[i];
+        var asyncSrc = e.getAttribute("anima-src");
+        e.setAttribute("src", asyncSrc);
+      }
+    };
+    anima_pauseHiddenVideos = function (tag) {
+      var elements = document.getElementsByTagName("video");
+      for (var i = 0; i < elements.length; i++) {
+        var e = elements[i];
+        var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+        var isHidden = anima_isHidden(e);
+        if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+          e.play();
+        } else if (isPlaying && isHidden) {
+          e.pause();
+        }
+      }
+    };
+    anima_loadAsyncSrc = function (tag) {
+      anima_loadAsyncSrcForTag("img");
+      anima_loadAsyncSrcForTag("iframe");
+      anima_loadAsyncSrcForTag("video");
+      anima_pauseHiddenVideos();
+    };
+    var anima_getTop = function (e) {
+      var top = 0;
+      do {
+        top += e.offsetTop || 0;
+        e = e.offsetParent;
+      } while (e);
+      return top;
+    };
+    anima_loadAsyncSrc();
+    anima_old_onResize = window.onresize;
+    anima_new_onResize = undefined;
+    anima_updateOnResize = function () {
+      if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+        anima_new_onResize = function (x) {
+          if (anima_old_onResize != undefined) anima_old_onResize(x);
+          anima_loadAsyncSrc();
+        };
+        window.onresize = anima_new_onResize;
+        setTimeout(function () {
+          anima_updateOnResize();
+        }, 3000);
+      }
+    };
+    anima_updateOnResize();
+    setTimeout(function () {
+      anima_loadAsyncSrc();
+    }, 200);
+  </script>
+  
+</body>
+
+</html>

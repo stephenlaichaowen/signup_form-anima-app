@@ -1,0 +1,1096 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:500,600');
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper ,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+/* ANIMA screen - signupform */
+.font-class-1 {
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-style          : normal;
+  font-weight         : 500;
+  line-height         : 16.0px;
+}
+.font-class-2 {
+  color               : var(--auto-palette-color-4);
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-style          : normal;
+  font-weight         : 500;
+  letter-spacing      : -0.30px;
+  line-height         : 16.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-2: rgba(74,107,255,1.0);
+  --auto-palette-color-3: rgba(212,212,213,1.0);
+  --auto-palette-color-4: rgba(189,189,189,1.0);
+}
+.signupform .rectangle-path-4179b4ae-6d2f-42e4-8e6f-db926bcddc13-er19vf {
+  background-color    : rgba(112,112,112,0);
+  height              : 7px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 13px;
+}
+.signupform .shape-8dd9fb54-c58d-4f58-b070-e4bfb1cb7ee2-TDAu9T {
+  background-color    : rgba(112,112,112,0);
+  height              : 9px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 10px;
+}
+.signupform .lock-800e4654-fb47-48b7-a859-58d008274eb6-lM9sqZ {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 18px;
+  justify-content     : flex-end;
+  left                : 0px;
+  min-width           : 16px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .combined-shape-ea73ecfa-9dda-467e-af3f-75357dbbf33d-RxMoFV {
+  background-color    : rgba(112,112,112,0);
+  flex-shrink         : 0;
+  height              : 18px;
+  position            : relative;
+  width               : 16px;
+}
+.signupform .subtraction-2-d07e6c9f-09dc-4a38-941a-d07fed969690-tIWPbO {
+  background-color    : rgba(112,112,112,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 7px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .combined-shape-7970f7d0-2a34-4864-8346-e0da7567af06-QK5AsV {
+  background-color    : rgba(112,112,112,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .rectangle-path-216cb558-88a3-4645-a93f-470a6f72a62e-Ez05WW {
+  background-color    : rgba(112,112,112,0);
+  height              : 7px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 13px;
+}
+.signupform .shape-813bd1c4-9963-4f4c-85fb-0491e03ae327-sDWTbx {
+  background-color    : rgba(112,112,112,0);
+  height              : 9px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 10px;
+}
+.signupform .placeholder-592d1547-0ee4-4a89-9b98-6569df348ace-Wxxj1A {
+  background-color    : rgba(189,189,189,0);
+  border              : 0;
+  height              : 23px;
+  left                : 58px;
+  padding             : 0;
+  position            : absolute;
+  resize              : none;
+  text-align          : left;
+  top                 : 32px;
+  transform           : rotate(0deg);
+  width               : 260px;
+}
+.signupform .placeholder-592d1547-0ee4-4a89-9b98-6569df348ace-Wxxj1A::placeholder {
+  color               : rgba(189,189,189,0.6);
+}
+.signupform .confirm-password-14a481a6-625c-41a8-86d3-52f7dfd8ba95-gkZA5r {
+  background-color    : rgba(74,107,255,0);
+  color               : var(--auto-palette-color-2);
+  height              : auto;
+  left                : 0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .span0-gkZA5r {
+  color               : rgba(137,136,136,1.0);
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-style          : normal;
+  font-weight         : 500;
+  letter-spacing      : 0.00px;
+}
+.signupform .span1-gkZA5r {
+  color               : rgba(74,107,255,1.0);
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-style          : normal;
+  font-weight         : 500;
+  letter-spacing      : 0.00px;
+}
+.signupform .sign-up-header-d2e932d8-b217-4250-86ee-25c68289515d-Tpjxcn {
+  background-color    : rgba(74,107,255,0);
+  color               : var(--auto-palette-color-2);
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  font-style          : normal;
+  font-weight         : 500;
+  height              : auto;
+  left                : 70px;
+  letter-spacing      : -1.20px;
+  line-height         : 30.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 56px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .bitmap-bitmap-mask-a2b38dff-1bf6-46fc-be21-59a715721e6a-8hSJGa {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 800px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 1024px;
+}
+.signupform .bitmap-b65ee03f-0d99-48d8-b543-4dfb7321bf01-xLAhA1 {
+  background-color    : rgba(255,255,255,0);
+  height              : 652px;
+  left                : -21px;
+  position            : absolute;
+  top                 : 366px;
+  width               : 1244px;
+}
+.signupform .mask-cdeede07-20e0-47d9-8298-e141cf1e7ad1-91Vriw {
+  background-color    : var(--auto-palette-color-1);
+  height              : 800px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 1024px;
+}
+.signupform .rectangle-0b921d45-1576-4999-a1b4-cb94a94f84f4-t0WBFN {
+  background-color    : rgba(255,255,255,0);
+  border-radius       : 10.0px;
+  height              : 578px;
+  left                : -16px;
+  position            : absolute;
+  top                 : -12px;
+  transform           : rotate(0deg);
+  width               : 925px;
+}
+.signupform .group-a335bd9f-2a22-425e-a016-c48ad971ad1a-VMx83L {
+  background-color    : rgba(255,255,255,0);
+  height              : 545px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 892px;
+}
+.signupform .image-26763ec9-9c86-4c64-9d7f-85b13834d108-JT8xLI {
+  align-items         : flex-start;
+  background-color    : rgba(216,216,216,1.0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 545px;
+  justify-content     : flex-start;
+  left                : 438px;
+  min-width           : 454px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .image-168e85f3-5d58-4509-ad6d-f139b1e3acd8-38xpUT {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 545px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 454px;
+}
+.signupform .foodies-image-66ed9a41-e4c1-46db-9def-7bfc6d3d508a-cO52Tv {
+  background-color    : rgba(255,255,255,0);
+  height              : 545px;
+  left                : -86px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 550px;
+}
+.signupform .rectangle-af9f68d4-d163-483f-bffc-2a800666ad89-qCx5Ca {
+  background-color    : rgba(216,216,216,1.0);
+  height              : 545px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 454px;
+}
+.signupform .rectangle-d392e276-d1cd-4c04-8efd-81d2a445e36b-VOmuDe {
+  background-color    : rgba(255,255,255,0);
+  border-radius       : 10.0px;
+  height              : 578px;
+  left                : -16px;
+  position            : absolute;
+  top                 : -12px;
+  width               : 925px;
+}
+.signupform .sign-up-button-afe13fbb-f8d0-4b99-8de1-be2b4520dc0f-HSWxE8 {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 40px;
+  left                : 62px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 453px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 184px;
+}
+.signupform .sign-up-button-afe13fbb-f8d0-4b99-8de1-be2b4520dc0f-HSWxE8:hover {
+  transform           : translate(0, -5px);
+  box-shadow          : 0px 12px 5px -8px rgba(0,0,0,0.2);
+}
+.signupform .rectangle-4f86486b-57a6-438c-8bdf-9664683f8965-2utOFP {
+  background-color    : var(--auto-palette-color-2);
+  border-radius       : 6.0px;
+  height              : 40px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 184px;
+}
+.signupform .sign-up-3f4d7f04-e140-460d-ad24-04f38c5038c2-OEfxKX {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-style          : normal;
+  font-weight         : 600;
+  height              : auto;
+  left                : 66px;
+  letter-spacing      : 0.00px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 15px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .full-name-2dd26ff7-810d-457f-992a-ffbd689ba763-oNaTow {
+  background-color    : rgba(255,255,255,0);
+  height              : 61px;
+  left                : 60px;
+  position            : absolute;
+  top                 : 117px;
+  transform           : rotate(0deg);
+  width               : 318px;
+}
+.signupform .rectangle-8df6067a-800b-4b4a-8ea2-202399d1fb40-aCkwwh {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-3);
+  border-radius       : 6.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 40px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 21px;
+  transform           : rotate(0deg);
+  width               : 316px;
+}
+.signupform .user-cf667662-ebf3-4a32-9e17-490f328b5e7c-A6xpKU {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 19px;
+  justify-content     : flex-start;
+  left                : 22px;
+  min-width           : 16px;
+  position            : absolute;
+  top                 : 32px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .user-e4b3176f-1cfc-47c8-a2eb-627118094058-KXayuE {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 19px;
+  margin-left         : 0px;
+  margin-top          : -0.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .combined-shape-26b043b6-eeb7-44d8-b7c8-416eecaabea2-vl0LzL {
+  background-color    : rgba(112,112,112,0);
+  height              : 19px;
+  left                : 0px;
+  position            : absolute;
+  top                 : -0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .union-1-20f7bcaf-2100-45a8-8195-f054041fe69b-xNPxx8 {
+  align-items         : flex-start;
+  background-color    : rgba(112,112,112,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 19px;
+  position            : absolute;
+  top                 : -0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .shape-bbec5b2c-7f97-4563-81ec-ca8ee7b514bf-jZ9wTd {
+  background-color    : rgba(112,112,112,0);
+  flex-shrink         : 0;
+  height              : 8px;
+  margin-top          : 1px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .oval-381985a2-fd6e-4d4e-b9e2-c43104de50de-xulBwt {
+  background-color    : rgba(112,112,112,0);
+  flex-shrink         : 0;
+  height              : 10px;
+  margin-left         : 3.56px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.signupform .oval-f46b74e9-513a-4fca-9118-f539dd5c1800-6tqesK {
+  background-color    : rgba(112,112,112,0);
+  height              : 6px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 5px;
+}
+.signupform .user-0b36f4ad-3681-4dfd-83a4-458b729a7364-uHYtLc {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 19px;
+  justify-content     : flex-start;
+  left                : 0px;
+  position            : absolute;
+  top                 : -0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .combined-shape-5668f44f-3cb8-4549-9f28-8da32708d387-LWkT0A {
+  background-color    : rgba(112,112,112,0);
+  flex-shrink         : 0;
+  height              : 19px;
+  margin-top          : -0.0px;
+  position            : relative;
+  width               : 16px;
+}
+.signupform .union-1-c1c15d77-60a8-471c-821f-1b3fa3b510a7-qNzx5f {
+  align-items         : flex-start;
+  background-color    : rgba(112,112,112,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 19px;
+  position            : absolute;
+  top                 : -0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .mail-de88e259-1478-4657-8033-cbcb241d9f46-kf2M07 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 17px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 20px;
+}
+.signupform {
+  background-color    : var(--auto-palette-color-1);
+  height              : 800.0px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1024.0px;
+}
+.signupform .bitmap-bitmap-mask-b966a2ac-ad32-4d33-8550-f40bd8470c9b-YkwD3l {
+  align-items         : flex-start;
+  background-color    : var(--auto-palette-color-1);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 800px;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-width           : 1024px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .email-bcdbb518-5b02-4a32-809b-c27565cadf7f-a05gUO {
+  background-color    : rgba(255,255,255,0);
+  height              : 61px;
+  left                : 62px;
+  position            : absolute;
+  top                 : 198px;
+  transform           : rotate(0deg);
+  width               : 316px;
+}
+.signupform .full-name-6ecc1dc0-d609-4aa5-8cc4-828c5c7ca1fb-9kW7ux {
+  background-color    : rgba(137,136,136,0);
+  color               : rgba(137,136,136,1.0);
+  height              : auto;
+  left                : 0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .placehoolder-1d282209-dfb2-4c92-af96-76cfda85f9ca-fv5Gxf {
+  background-color    : rgba(189,189,189,0);
+  border              : 0;
+  height              : 23px;
+  left                : 57px;
+  padding             : 0;
+  position            : absolute;
+  resize              : none;
+  text-align          : left;
+  top                 : 32px;
+  transform           : rotate(0deg);
+  width               : 260px;
+}
+.signupform .placehoolder-1d282209-dfb2-4c92-af96-76cfda85f9ca-fv5Gxf::placeholder {
+  color               : rgba(189,189,189,0.6);
+}
+.signupform .combined-shape-8d0f0322-0d0a-4aec-b171-3d8e077728fe-1Z5Wr4 {
+  background-color    : rgba(112,112,112,0);
+  height              : 17px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 20px;
+}
+.signupform .subtraction-1-0864bc8f-d808-46ef-841f-7f7a7a87da21-Qd5a8B {
+  background-color    : rgba(112,112,112,0);
+  height              : 17px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 20px;
+}
+.signupform .shape-e977e581-2104-477d-b814-b3620ec71348-QpUB87 {
+  background-color    : rgba(112,112,112,0);
+  height              : 17px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 20px;
+}
+.signupform .combined-shape-0fc60488-1d05-469a-99a7-c6ff3cd2cd00-076mWU {
+  background-color    : rgba(112,112,112,0);
+  height              : 13px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .shape-1e5acf01-462f-497f-8485-1df408ef92ac-Dt3W6r {
+  background-color    : rgba(112,112,112,0);
+  flex-shrink         : 0;
+  height              : 8px;
+  margin-top          : 1px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .oval-aa167846-1fe0-4bab-bc06-f166ac6deb75-aLli57 {
+  background-color    : rgba(112,112,112,0);
+  height              : 6px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 5px;
+}
+.signupform .bitmap-fdbc5de5-52c3-401e-8b10-15534bdaa025-LpvjvB {
+  background-color    : rgba(255,255,255,0);
+  height              : 1108px;
+  left                : -684px;
+  position            : absolute;
+  top                 : -14px;
+  width               : 1146px;
+}
+.signupform .oval-09b0924c-e737-40c0-89b2-342b4c333111-YFsuME {
+  background-color    : rgba(112,112,112,0);
+  flex-shrink         : 0;
+  height              : 10px;
+  margin-left         : 3.56px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.signupform .rectangle-6a58fccc-5053-4de4-8bb6-afb5c781ccc9-JUnnfO {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-3);
+  border-radius       : 6.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 40px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 21px;
+  transform           : rotate(0deg);
+  width               : 316px;
+}
+.signupform .mail-21baa566-85c8-45de-b6d4-2ce4f365b556-jVpuZn {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 17px;
+  justify-content     : flex-end;
+  left                : 16px;
+  min-width           : 20px;
+  position            : absolute;
+  top                 : 33px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .shape-3f52419f-be57-4924-a5f3-7df7927d68a5-hkPDbx {
+  background-color    : rgba(112,112,112,0);
+  height              : 9px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 20px;
+}
+.signupform .mail-51fa9c8e-d007-4440-b038-b82f6e9faed0-O15VpQ {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 17px;
+  justify-content     : flex-end;
+  left                : 0px;
+  min-width           : 20px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .combined-shape-0e8be7c4-bf23-42a0-8324-35fffe0f463c-eZW3TM {
+  background-color    : rgba(112,112,112,0);
+  flex-shrink         : 0;
+  height              : 17px;
+  position            : relative;
+  width               : 20px;
+}
+.signupform .subtraction-1-c3ee3ad7-5164-460d-9286-f937c0ac41cc-jRBi2s {
+  background-color    : rgba(112,112,112,0);
+  height              : 17px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 20px;
+}
+.signupform .shape-4f68bfb3-586b-4ec8-b727-f0d4c63a263d-86xoJB {
+  background-color    : rgba(112,112,112,0);
+  height              : 17px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 20px;
+}
+.signupform .combined-shape-15db9608-c577-422e-a3e7-5d2493ed7ca1-t58kwP {
+  background-color    : rgba(112,112,112,0);
+  height              : 13px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .email-63a20ef9-c8d8-4744-bbb2-95f312476d4c-oDsJmE {
+  background-color    : rgba(74,107,255,0);
+  color               : var(--auto-palette-color-2);
+  height              : auto;
+  left                : 0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .span0-oDsJmE {
+  color               : rgba(137,136,136,1.0);
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-style          : normal;
+  font-weight         : 500;
+  letter-spacing      : 0.00px;
+}
+.signupform .shape-927bc090-b22c-4f1a-98e0-0a548aa9924d-Ha7Evb {
+  background-color    : rgba(112,112,112,0);
+  height              : 9px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 20px;
+}
+.signupform .placeholder-bfc7b4d9-c74f-41fc-808a-bd8496978653-uEATjO {
+  background-color    : rgba(189,189,189,0);
+  border              : 0;
+  height              : 23px;
+  left                : 55px;
+  padding             : 0;
+  position            : absolute;
+  resize              : none;
+  text-align          : left;
+  top                 : 32px;
+  transform           : rotate(0deg);
+  width               : 260px;
+}
+.signupform .placeholder-bfc7b4d9-c74f-41fc-808a-bd8496978653-uEATjO::placeholder {
+  color               : rgba(189,189,189,0.6);
+}
+.signupform .group-b023afb8-09fa-4641-9792-f71175645e52-xPhZfR {
+  background-color    : rgba(255,255,255,0);
+  height              : 545px;
+  left                : 66px;
+  position            : absolute;
+  top                 : 128px;
+  transform           : rotate(0deg);
+  width               : 892px;
+}
+.signupform .span1-oDsJmE {
+  color               : rgba(74,107,255,1.0);
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-style          : normal;
+  font-weight         : 500;
+  letter-spacing      : 0.00px;
+}
+.signupform .rectangle-aa4ae280-a105-444f-a093-c84571d20ea8-5EsjEl {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-3);
+  border-radius       : 6.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 40px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 21px;
+  transform           : rotate(0deg);
+  width               : 316px;
+}
+.signupform .password-3fc09bf2-b1c9-4777-8bda-5531a3b25c15-KNXhRM {
+  background-color    : rgba(255,255,255,0);
+  height              : 61px;
+  left                : 62px;
+  position            : absolute;
+  top                 : 277px;
+  transform           : rotate(0deg);
+  width               : 316px;
+}
+.signupform .subtraction-2-017a028e-7027-48df-bfe0-c203b7693e07-bNM0IJ {
+  background-color    : rgba(112,112,112,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 7px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .combined-shape-0d499082-75c0-46e0-8762-c25703e8b763-9l4fVE {
+  background-color    : rgba(112,112,112,0);
+  height              : 18px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .lock-9fffb3ee-9c87-4757-8dfa-338853395eff-ZWZXEc {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 18px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .lock-eafc3649-0cfe-4cba-b9e2-1be8abdbcd57-Ts2LC2 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 18px;
+  justify-content     : flex-start;
+  left                : 20px;
+  min-width           : 16px;
+  position            : absolute;
+  top                 : 32px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .combined-shape-47d81960-8184-4d7f-b73c-61f3cc0b6ec3-NwvCmT {
+  background-color    : rgba(112,112,112,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .rectangle-path-6866752e-81f4-4e81-bd20-68683cf1e1eb-9WOeef {
+  background-color    : rgba(112,112,112,0);
+  height              : 7px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 13px;
+}
+.signupform .combined-shape-4491724c-d57b-4859-8cc9-909384d2897a-B1x2B2 {
+  background-color    : rgba(112,112,112,0);
+  flex-shrink         : 0;
+  height              : 18px;
+  margin-bottom       : -0.0px;
+  position            : relative;
+  width               : 16px;
+}
+.signupform .lock-b1b179e8-6500-4c48-8d31-bd9bef562bab-ljw19B {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 18px;
+  justify-content     : flex-end;
+  left                : 0px;
+  min-width           : 16px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .shape-13e43d69-20e1-426f-a8c1-b1e424113a74-C0wj7L {
+  background-color    : rgba(112,112,112,0);
+  height              : 9px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 10px;
+}
+.signupform .combined-shape-d3961098-854a-44dc-b9e5-215bbded631b-JKmdZI {
+  background-color    : rgba(112,112,112,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .subtraction-2-d8aa8cc9-1554-4fae-a6fc-67f769111122-ktkeh3 {
+  background-color    : rgba(112,112,112,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 7px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .shape-6a988e8b-aa35-46b7-9bd7-96069f5ff3a1-G9ImN8 {
+  background-color    : rgba(112,112,112,0);
+  height              : 9px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 10px;
+}
+.signupform .rectangle-path-d527fc27-1d87-4789-9462-a64ae31f594e-MRxeyM {
+  background-color    : rgba(112,112,112,0);
+  height              : 7px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 13px;
+}
+.signupform .combined-shape-170b0119-d322-4437-a1ed-62793b24ddb7-pP3VYO {
+  background-color    : rgba(112,112,112,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .subtraction-2-9b9bb839-fc28-4325-a7df-682eb592498b-m12WUh {
+  background-color    : rgba(112,112,112,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 7px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .rectangle-f92e8feb-c47e-4a64-8ab8-cf7b6e26fe81-MxFotK {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-3);
+  border-radius       : 6.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 40px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 21px;
+  transform           : rotate(0deg);
+  width               : 316px;
+}
+.signupform .lock-710e6f5b-a99c-414d-bfe6-eb356ea9bc49-3Vlx16 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 18px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.signupform .lock-c4dc9132-d948-47e4-be18-d4576a0fc821-1TEE6E {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 18px;
+  justify-content     : flex-start;
+  left                : 20px;
+  min-width           : 16px;
+  position            : absolute;
+  top                 : 32px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .span0-vDZ7mx {
+  color               : rgba(137,136,136,1.0);
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-style          : normal;
+  font-weight         : 500;
+  letter-spacing      : 0.00px;
+}
+.signupform .confirm-password-cfca8605-4d75-4e41-b78c-f879b0fbe2df-DoxGDr {
+  background-color    : rgba(255,255,255,0);
+  height              : 61px;
+  left                : 62px;
+  position            : absolute;
+  top                 : 356px;
+  transform           : rotate(0deg);
+  width               : 316px;
+}
+.signupform .span1-vDZ7mx {
+  color               : rgba(74,107,255,1.0);
+  font-family         : Work Sans, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-style          : normal;
+  font-weight         : 500;
+  letter-spacing      : 0.00px;
+}
+.signupform .placeholder-45c0b1a9-ad63-4a7b-b604-66ccf46fe661-3YDzxs {
+  background-color    : rgba(189,189,189,0);
+  border              : 0;
+  height              : 23px;
+  left                : 58px;
+  padding             : 0;
+  position            : absolute;
+  resize              : none;
+  text-align          : left;
+  top                 : 32px;
+  transform           : rotate(0deg);
+  width               : 260px;
+}
+.signupform .placeholder-45c0b1a9-ad63-4a7b-b604-66ccf46fe661-3YDzxs::placeholder {
+  color               : rgba(189,189,189,0.6);
+}
+.signupform .password-c6aa22c7-1e23-4497-b7d6-0d6af027de49-vDZ7mx {
+  background-color    : rgba(74,107,255,0);
+  color               : var(--auto-palette-color-2);
+  height              : auto;
+  left                : 3px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.signupform .combined-shape-1a339da4-3a03-423b-9a70-1c1104343824-xjgzEA {
+  background-color    : rgba(112,112,112,0);
+  height              : 18px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
